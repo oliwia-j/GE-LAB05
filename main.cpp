@@ -46,7 +46,7 @@ void reset() {
 // Initialise all the objects needed for the game.
 void init() {
 	// Load font-face from res dir
-	font.loadFromFile("res/fonts/Roboto/static/Roboto-Regular.ttf");
+	font.loadFromFile(".\\Debug\\res\\fonts\\Roboto\\static\\Roboto-Regular.ttf");
 	// Set text element to use font
 	text.setFont(font);
 	// Set character size to 24 pixels
