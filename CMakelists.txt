@@ -15,12 +15,12 @@ add_subdirectory("lib/SFML")
 set(SFML_INCS "lib/SFML/include")
 link_directories("${CMAKE_BINARY_DIR}/lib/SFML/lib")
 
-#### Practical 04 ####
-add_executable(lab_04 main.cpp  game_system.cpp )
-target_include_directories(lab_04 PRIVATE ${SFML_INCS})
-target_link_libraries(lab_04 sfml-graphics)
+#### Practical 00 ####
+add_executable(lab_00 main.cpp  game_system.cpp )
+target_include_directories(lab_00 PRIVATE ${SFML_INCS})
+target_link_libraries(lab_00 sfml-graphics)
 
-set_target_properties(lab_04 
+set_target_properties(lab_00 
     PROPERTIES VS_DEBUGGER_WORKING_DIRECTORY
     ${CMAKE_RUNTIME_OUTPUT_DIRECTORY}/$(Configuration)
 )
@@ -29,4 +29,4 @@ add_custom_target(copy_resources ALL COMMAND ${CMAKE_COMMAND}
     "${PROJECT_SOURCE_DIR}/res"
     ${CMAKE_RUNTIME_OUTPUT_DIRECTORY}/$<CONFIGURATION>/res
 )
-add_dependencies(lab_04 copy_resources)
+add_dependencies(lab_00 copy_resources)
