@@ -4,22 +4,21 @@
 using param = Parameters;
 using gs = GameSystem;
 
-sf::Texture gs::spritesheet;
+void GameSystem::start(unsigned int width, unsigned int height,
+    const std::string& name, const float& time_step) {
+}
 
-void GameSystem::init() {
-    if (!spritesheet.loadFromFile("./Debug/res/img/invaders_sheet.png")) {
-        std::cerr << "Failed to load spritesheet!" << std::endl;
-    }
+void GameSystem::clean() {
 }
 
 void GameSystem::reset() {
 }
 
-void GameSystem::update(const float& dt) {
+void GameSystem::_init() {
 }
 
-void GameSystem::render(sf::RenderWindow& window) {
+void GameSystem::_update(const float& dt) {
 }
 
-void GameSystem::clean() {
+void GameSystem::_render(sf::RenderWindow& window) {
 }
